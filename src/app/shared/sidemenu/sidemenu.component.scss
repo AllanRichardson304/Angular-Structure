@@ -1,0 +1,41 @@
+@import "../../../assets/scss/variable.scss";
+
+.sidenav {
+  background-color: var(--card-bg);
+  padding: 3rem 0 0 0;
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 2px 8px #f0f1f2;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 5.5rem;
+  width: 25rem;
+  height: 100%;
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 1rem 3rem;
+      cursor: pointer;
+      img {
+        filter: invert(100%);
+      }
+      span {
+        color: var(--text-color);
+        font-size: 1.6rem;
+        font-family: "GoogleSans-Medium";
+      }
+    }
+  }
+}
+.active-menu {
+  background: linear-gradient(92deg, rgb(89, 95, 247) -229%, transparent 94%);
+  border-left: 4px solid rgb(89, 95, 247);
+}
